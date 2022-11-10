@@ -1,0 +1,11 @@
+*
+!.gitignore
+!README.md
+!Makefile
+!dataset/
+!dataset/*
+!doc/
+!doc/*
+!doc/img/*
+!src/
+!src/*
