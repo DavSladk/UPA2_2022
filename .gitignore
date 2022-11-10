@@ -3,7 +3,7 @@
 !README.md
 !Makefile
 !dataset/
-!dataset/*
+!dataset/*.csv
 !doc/
 !doc/*
 !doc/img/*
