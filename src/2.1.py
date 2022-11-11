@@ -56,18 +56,18 @@ def getStatValues(dataFrame, column, toPrint=False):
     
     return columnDict
 
-dtype = {'Species': str, 'Region': str, 'Island': str, 'Stage': str, 'Individual ID': str, 'Clutch Completion': str, 'Date Egg': str, 'Culmen Length (mm)': float, 'Culmen Depth (mm)': float, 'Flipper Length (mm)': float, 'Body Mass (g)': float, 'Sex': str, 'Delta 15 N (o/oo)': float, 'Delta 13 C (o/oo)': float}
-penguins = pd.read_csv(sys.argv[1])
-
-getValuesAmount(penguins, 'Species', True)
-getValuesAmount(penguins, 'Region', True)
-getValuesAmount(penguins, 'Island', True)
-getValuesAmount(penguins, 'Stage', True)
-getValuesAmount(penguins, 'Clutch Completion', True)
-getStatValues(penguins, 'Culmen Length (mm)', True)
-getStatValues(penguins, 'Culmen Depth (mm)', True)
-getStatValues(penguins, 'Flipper Length (mm)', True)
-getStatValues(penguins, 'Body Mass (g)', True)
-getValuesAmount(penguins, 'Sex', True)
-getStatValues(penguins, 'Delta 15 N (o/oo)', True)
-getStatValues(penguins, 'Delta 13 C (o/oo)', True)
+if __name__ == '__main__':
+    dtype = {'Species': str, 'Region': str, 'Island': str, 'Stage': str, 'Individual ID': str, 'Clutch Completion': str, 'Date Egg': str, 'Culmen Length (mm)': float, 'Culmen Depth (mm)': float, 'Flipper Length (mm)': float, 'Body Mass (g)': float, 'Sex': str, 'Delta 15 N (o/oo)': float, 'Delta 13 C (o/oo)': float}
+    penguins = pd.read_csv(sys.argv[1])
+    getValuesAmount(penguins, 'Species', True)
+    getValuesAmount(penguins, 'Region', True)
+    getValuesAmount(penguins, 'Island', True)
+    getValuesAmount(penguins, 'Stage', True)
+    getValuesAmount(penguins, 'Clutch Completion', True)
+    getStatValues(penguins, 'Culmen Length (mm)', True)
+    getStatValues(penguins, 'Culmen Depth (mm)', True)
+    getStatValues(penguins, 'Flipper Length (mm)', True)
+    getStatValues(penguins, 'Body Mass (g)', True)
+    getValuesAmount(penguins, 'Sex', True)
+    getStatValues(penguins, 'Delta 15 N (o/oo)', True)
+    getStatValues(penguins, 'Delta 13 C (o/oo)', True)
