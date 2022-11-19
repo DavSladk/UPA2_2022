@@ -1,0 +1,224 @@
+###### Atribut exploration
+
+#### Kategorické
+
+       species  island   sex
+count      344     344   334
+unique       3       3     3
+top     Adelie  Biscoe  MALE
+freq       152     168   168
+
+## Species
+--------
+Adelie       152
+Gentoo       124
+Chinstrap     68
+Name: species, dtype: int64
+Adelie       44.2%
+Gentoo       36.0%
+Chinstrap    19.8%
+Name: species, dtype: object
+
+## Island
+--------
+Biscoe       168
+Dream        124
+Torgersen     52
+Name: island, dtype: int64
+Biscoe       48.8%
+Dream        36.0%
+Torgersen    15.1%
+Name: island, dtype: object
+
+## Sex
+--------
+MALE      168
+FEMALE    165
+.           1
+Name: sex, dtype: int64
+MALE      50.3%
+FEMALE    49.4%
+.          0.3%
+Name: sex, dtype: object
+
+#### Číselné
+
+       culmen_length_mm  culmen_depth_mm  flipper_length_mm  body_mass_g
+count        342.000000       342.000000         342.000000   342.000000
+mean          43.921930        17.151170         200.915205  4201.754386
+std            5.459584         1.974793          14.061714   801.954536
+min           32.100000        13.100000         172.000000  2700.000000
+25%           39.225000        15.600000         190.000000  3550.000000
+50%           44.450000        17.300000         197.000000  4050.000000
+75%           48.500000        18.700000         213.000000  4750.000000
+max           59.600000        21.500000         231.000000  6300.000000
+
+###### Missing values
+
+species               0
+island                0
+culmen_length_mm      2
+culmen_depth_mm       2
+flipper_length_mm     2
+body_mass_g           2
+sex                  10
+dtype: int64
+
+Record with missing value 1 on row 3
+species                 Adelie
+island               Torgersen
+culmen_length_mm           NaN
+culmen_depth_mm            NaN
+flipper_length_mm          NaN
+body_mass_g                NaN
+sex                        NaN
+Name: 3, dtype: object
+
+Record with missing value 2 on row 8
+species                 Adelie
+island               Torgersen
+culmen_length_mm          34.1
+culmen_depth_mm           18.1
+flipper_length_mm        193.0
+body_mass_g             3475.0
+sex                        NaN
+Name: 8, dtype: object
+
+Record with missing value 3 on row 9
+species                 Adelie
+island               Torgersen
+culmen_length_mm          42.0
+culmen_depth_mm           20.2
+flipper_length_mm        190.0
+body_mass_g             4250.0
+sex                        NaN
+Name: 9, dtype: object
+
+Record with missing value 4 on row 10
+species                 Adelie
+island               Torgersen
+culmen_length_mm          37.8
+culmen_depth_mm           17.1
+flipper_length_mm        186.0
+body_mass_g             3300.0
+sex                        NaN
+Name: 10, dtype: object
+
+Record with missing value 5 on row 11
+species                 Adelie
+island               Torgersen
+culmen_length_mm          37.8
+culmen_depth_mm           17.3
+flipper_length_mm        180.0
+body_mass_g             3700.0
+sex                        NaN
+Name: 11, dtype: object
+
+Record with missing value 6 on row 47
+species              Adelie
+island                Dream
+culmen_length_mm       37.5
+culmen_depth_mm        18.9
+flipper_length_mm     179.0
+body_mass_g          2975.0
+sex                     NaN
+Name: 47, dtype: object
+
+Record with missing value 7 on row 246
+species              Gentoo
+island               Biscoe
+culmen_length_mm       44.5
+culmen_depth_mm        14.3
+flipper_length_mm     216.0
+body_mass_g          4100.0
+sex                     NaN
+Name: 246, dtype: object
+
+Record with missing value 8 on row 286
+species              Gentoo
+island               Biscoe
+culmen_length_mm       46.2
+culmen_depth_mm        14.4
+flipper_length_mm     214.0
+body_mass_g          4650.0
+sex                     NaN
+Name: 286, dtype: object
+
+Record with missing value 9 on row 324
+species              Gentoo
+island               Biscoe
+culmen_length_mm       47.3
+culmen_depth_mm        13.8
+flipper_length_mm     216.0
+body_mass_g          4725.0
+sex                     NaN
+Name: 324, dtype: object
+
+Record with missing value 10 on row 339
+species              Gentoo
+island               Biscoe
+culmen_length_mm        NaN
+culmen_depth_mm         NaN
+flipper_length_mm       NaN
+body_mass_g             NaN
+sex                     NaN
+Name: 339, dtype: object
+
+Total rows with missing value: 10
+Total rows with more than two missing value: 2
+
+### Male correlation
+                   culmen_length_mm  culmen_depth_mm  flipper_length_mm  body_mass_g
+culmen_length_mm           1.000000        -0.395294           0.662654     0.476761
+culmen_depth_mm           -0.395294         1.000000          -0.716201    -0.755492
+flipper_length_mm          0.662654        -0.716201           1.000000     0.865499
+body_mass_g                0.476761        -0.755492           0.865499     1.000000
+
+### Female correlation
+                   culmen_length_mm  culmen_depth_mm  flipper_length_mm  body_mass_g
+culmen_length_mm           1.000000        -0.426380           0.571474     0.581295
+culmen_depth_mm           -0.426380         1.000000          -0.794167    -0.747770
+flipper_length_mm          0.571474        -0.794167           1.000000     0.884825
+body_mass_g                0.581295        -0.747770           0.884825     1.000000
+
+### Adelie correlation
+                   culmen_length_mm  culmen_depth_mm  flipper_length_mm  body_mass_g
+culmen_length_mm           1.000000         0.385813           0.332274     0.544276
+culmen_depth_mm            0.385813         1.000000           0.310897     0.580156
+flipper_length_mm          0.332274         0.310897           1.000000     0.464854
+body_mass_g                0.544276         0.580156           0.464854     1.000000
+
+### Chinstrap correlation
+                   culmen_length_mm  culmen_depth_mm  flipper_length_mm  body_mass_g
+culmen_length_mm           1.000000         0.653536           0.471607     0.513638
+culmen_depth_mm            0.653536         1.000000           0.580143     0.604498
+flipper_length_mm          0.471607         0.580143           1.000000     0.641559
+body_mass_g                0.513638         0.604498           0.641559     1.000000
+
+### Gentoo correlation
+                   culmen_length_mm  culmen_depth_mm  flipper_length_mm  body_mass_g
+culmen_length_mm           1.000000         0.644085           0.661791     0.667071
+culmen_depth_mm            0.644085         1.000000           0.708910     0.718265
+flipper_length_mm          0.661791         0.708910           1.000000     0.710870
+body_mass_g                0.667071         0.718265           0.710870     1.000000
+
+### Torgersen correlation
+                   culmen_length_mm  culmen_depth_mm  flipper_length_mm  body_mass_g
+culmen_length_mm           1.000000         0.216088           0.410364     0.426362
+culmen_depth_mm            0.216088         1.000000           0.388633     0.552308
+flipper_length_mm          0.410364         0.388633           1.000000     0.458776
+body_mass_g                0.426362         0.552308           0.458776     1.000000
+
+### Biscoe correlation
+                   culmen_length_mm  culmen_depth_mm  flipper_length_mm  body_mass_g
+culmen_length_mm           1.000000        -0.444508           0.866744     0.869434
+culmen_depth_mm           -0.444508         1.000000          -0.577777    -0.390541
+flipper_length_mm          0.866744        -0.577777           1.000000     0.882210
+body_mass_g                0.869434        -0.390541           0.882210     1.000000
+
+### Dream correlation
+                   culmen_length_mm  culmen_depth_mm  flipper_length_mm  body_mass_g
+culmen_length_mm           1.000000         0.365445           0.525504     0.299802
+culmen_depth_mm            0.365445         1.000000           0.442063     0.578793
+flipper_length_mm          0.525504         0.442063           1.000000     0.511803
+body_mass_g                0.299802         0.578793           0.511803     1.000000
