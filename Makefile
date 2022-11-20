@@ -1,4 +1,7 @@
-.PHONY: pdf clean zip
+.PHONY: pdf clean zip modify
+
+modify:
+	py ./src/modify_data.py ./dataset/penguins_lter.csv A.csv B.csv
 
 pdf:
 	pdflatex -output-directory doc doc/documentation.tex
