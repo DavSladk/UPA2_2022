@@ -1,4 +1,7 @@
-.PHONY: pdf clean zip modify
+.PHONY: pdf clean zip modify exp
+
+exp:
+	python3 ./src/exploration.py ./dataset/penguins_size.csv
 
 modify:
 	py ./src/modify_data.py ./dataset/penguins_lter.csv A.csv B.csv
@@ -15,4 +18,4 @@ clean:
 	rm -f xkolec08_xmorav41_xsladk07.zip
 
 zip: pdf clean
-	zip -r xkolec08_xmorav41_xsladk07.zip Makefile README.md doc src
+	zip -r xkolec08_xmorav41_xsladk07.zip Makefile doc src dataset

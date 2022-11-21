@@ -5,7 +5,8 @@
 !dataset/
 !dataset/*.csv
 !doc/
-!doc/*
+!doc/documentation.tex
+!doc/documentation.pdf
 !doc/img/*
 !src/
 !src/*
