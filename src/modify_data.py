@@ -59,9 +59,9 @@ if __name__ == "__main__":
     print(f"Vystupni csv A: {sys.argv[2]}")
     print(f"Vystupni csv B: {sys.argv[3]}")
     print("--------------------------------------------")
-    # penguins A - datova sada pro klasifikaci druhu tucnaku
+    # penguins A - datova sada pro kategoricka data
+    # penguins B - datova sada pro numericka date
     penguins_A = pd.read_csv(sys.argv[1])
-    # penguins B - Analyza rozdilu mezi samci a samickami
     penguins_B = pd.read_csv(sys.argv[1])
 
     print("(1)  - Odstraneni zbytecnych sloupcu")
